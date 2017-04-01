@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Form Test Show</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='surveystyle.css') }}">
+  </head>
+  <body>
+        <div id="wrapper">
+            <div ='box'>
+                <h2>Submitted Info</h2>
+                <h3>{{session['name']}}</h3>
+                <h3>{{session['location']}}</h3>
+                <h3>{{session['language']}}</h3>
+                <h3>{{session['comment']}}</h3>
+            </div>
+        </div>
+  </body>
+</html>
